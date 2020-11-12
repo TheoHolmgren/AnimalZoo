@@ -10,13 +10,14 @@ namespace AnimalZoo
     {
         public Cat(string name)
         {
-             Species species = Species.Cat ; //Cat=0, DOG=1, BIRD=2
+            //Initiera attributen i objektet
+            species = SPECIES.CAT ; //CAT=0, DOG=1, BIRD=2
             canFly = false;
             base.name = name;
         }
         public override void IntroduceYourself()
         {
-            Console.WriteLine("Meow, nu kommer: " + name + ", wow, en katt!");
+            Console.WriteLine("Meow, jag är en katt som heter: " + name);
             base.IntroduceYourself();
         }
     }

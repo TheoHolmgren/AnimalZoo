@@ -10,20 +10,21 @@ namespace AnimalZoo
     {
         static void Main(string[] args)
         {
-            Animal[] allAnimals;
+            Animal[] allAnimals; //Lägger objektet allAnimals i klassen Animal
 
-            allAnimals = new Animal[3];
+            allAnimals = new Animal[4]; //Den skapar fyra stycken tomma Animals i allAnimals
 
 
-            allAnimals[0] = new Cat("Kurre");
-            allAnimals[1] = new Dog("William");
-            allAnimals[2] = new Cat("Svante");
+            allAnimals[0] = new Cat("Kurre");  //En instans av klassen Cat skapas och läggs i index 0 av arrayen allAnimals
+            allAnimals[1] = new Dog("William"); //En instans av klassen Dog skaps och läggs i index 1 av arrayen allAnimals
+            allAnimals[2] = new Cat("Svante"); 
+            allAnimals[3] = new Bird("iNamNam");
 
-            foreach (Animal a in allAnimals)
+            foreach (Animal a in allAnimals) //För varje djur i listan allAnimals
             {
-                Console.WriteLine("Nu kommer " + a.name);
-                a.IntroduceYourself();
-                Console.WriteLine();
+                Console.WriteLine("Nu kommer " + a.name); //Skriv ut "nu kommer + djurets namn
+                a.IntroduceYourself(); //Anropar funktionen IntroduceYourself
+                Console.WriteLine(); 
             }
             Console.ReadKey();
         }

@@ -11,7 +11,8 @@ namespace AnimalZoo
 
         public Dog(string name)
         {
-            species = 1;
+            //Initiera attributen i objektet
+            species = SPECIES.DOG; //CAT = 0, DOG = 1, BIRD = 2
             canFly = false;
             base.name = name;
         }

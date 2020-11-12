@@ -10,14 +10,15 @@ namespace AnimalZoo
     {
         public Bird(string name)
         {
-            species = 3;
+            //Initiera attributen i objektet
+            species = SPECIES.BIRD; //CAT = 0, DOG = 1, BIRD = 2
             canFly = true;
             base.name = name;
         }
 
         public override void IntroduceYourself()
         {
-            Console.WriteLine("Pip aaaaa jag är en fågel!");
+            Console.WriteLine("Pip, jag är en fågel som heter: " + name);
             base.IntroduceYourself();
         }
     }
