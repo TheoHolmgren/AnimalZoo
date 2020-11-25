@@ -12,12 +12,13 @@ namespace AnimalZoo
         {
             //Initiera attributen i objektet
             species = SPECIES.CAT ; //CAT=0, DOG=1, BIRD=2
-            canFly = false;
-            base.name = name;
+            canFly = false; //Kan den flyga ja/nej 
+            base.name = name; //base.name tilldelas namnet name
         }
-        public override void IntroduceYourself()
+        public override void IntroduceYourself() //override gör så att denna kör över sin förälder
         {
             Console.WriteLine("Meow, jag är en katt som heter: " + name);
+            Console.WriteLine("Jag är " + this.age + " år gammal");
             base.IntroduceYourself();
         }
     }

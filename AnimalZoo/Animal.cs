@@ -13,12 +13,13 @@ namespace AnimalZoo
         public string name;
         public SPECIES species;
         public bool canFly;
+        public int age; //åldersvariabel åt djuren
 
 
         public virtual void IntroduceYourself()
         {
 
-            if (canFly == true)
+            if (canFly == true) //Kollar huruvida djuren kan flyga eller inte med hjälp utav canFly variabeln
             {
                 Console.WriteLine("I can fly!");
             }
